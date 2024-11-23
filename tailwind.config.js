@@ -6,10 +6,11 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: { bokor: ['Bokor'],},
+      
     },
   },
   plugins: [
     require('tailwind-scrollbar-hide'),
   ],
 }
+// fontFamily: { bokor: ['Bokor'],},

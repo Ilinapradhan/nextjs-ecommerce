@@ -37,11 +37,11 @@ function Frontpage() {
   return (
     <div className="w-full flex flex-row">
       <div className="w-full h-screen bg-[url('/homeimg1.png')] bg-cover flex flex-col  justify-center items-center">
-      <h1 className="text-white font-bokor font-bold text-8xl hover:text-6xl  transition ease-out duration-500">Wood World </h1>
+      <h1 className="text-white  font-bold text-8xl hover:text-6xl  transition ease-out duration-500">Wood World </h1>
       {/* <h1 className="text-white font-bokor font-bold text-3xl">One Stop Defination to all wood furniture You Need . </h1> */}
         <h1 id="typewriter" className="text-3xl text-white "></h1>
         {/* <Image
-          src="/homeimg.png"
+          src="/homeimg.png" font-bokor
           width={500}
           height={500}
           alt="Picture of the author"
