@@ -5,7 +5,9 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: { bokor: ['Bokor'],},
+    },
   },
   plugins: [
     require('tailwind-scrollbar-hide'),

@@ -4,6 +4,7 @@ import {initMongoose} from "../lib/mongoose";
 import {findAllProducts} from "./api/products";
 import Footer from "../components/Footer";
 import Layout from "../components/Layout";
+import Frontpage from "../components/Frontpage";
 
 export default function Home({products}) {
   const [phrase,setPhrase] = useState('');
@@ -15,7 +16,10 @@ export default function Home({products}) {
   }
 
   return (
+    <>
+    <Frontpage/>
     <Layout>
+      
       <input value={phrase} onChange={e => setPhrase(e.target.value)} type="text" placeholder="Search for products..." className="bg-gray-200 w-full py-2 px-4 rounded-xl"/>
       <div>
         {categoriesNames.map(categoryName => (
@@ -36,7 +40,7 @@ export default function Home({products}) {
         ))}
       </div>
 
-    </Layout>
+    </Layout></>
   )
 }
 
